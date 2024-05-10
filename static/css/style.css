@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    background: black url('../../images/background.png') no-repeat center center/cover;
+    height: 100vh;
+}
+
+header{
+    
+    height: 4rem;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    background-color: black;
+
+}
+header .name{
+    font-family: cursive;
+    font-size: 3rem;
+    margin-left: 10%;
+    flex-grow: 2;
+    height: 4rem;
+    
+   
+}
+header .navbar{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    height: 4rem;
+}
+header .navbar a{
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+    
+      }
+/* code to make horizontal line below the nav ul li a element */
+
+header .navbar a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+header .navbar a:hover::after{
+   
+    width:100% ;
+
+}
+.hero{
+    color: white;
+    font-size: 1.5rem;
+    /* position: relative; */
+    padding-left: 10%;
+    padding-top: 45vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.hero .strong{
+    font-size: 2em;
+    font-weight: 800;
+    padding:10px ;
+}
+
+.red{
+    color: red;
+
+}
+.box{
+    border: 2px solid purple;
+    height: 100vh;
+    background-color: black;
+}
+
+/* footer */
+footer{
+    background-color: rgba(0, 0, 0, 0.776);
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+#about {
+display: flex;
+}
+#about .img {
+    /* flex-grow: 1; */
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    background-color:black;
+
+}
+#about .img img{
+    flex-grow: 1;
+    border-radius: 50%;
+    border: 2px double #333;
+    height: 30rem;
+    background-color: #333;
+    /* margin: auto; */
+    padding: auto;
+
+
+
+}
+#about .about-details{
+    flex-grow: 1;
+}
+.about-details{
+   display: flex;
+   align-items: center;
+   padding-left: 2rem;
+   padding-right: 2rem;
+   color: #ABABAB;
+}
+.about-details .strong{
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom:2rem;
+    color: white;
+}
+.about-name .tab-titles{
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+   
+}
+.tab-titles .tab-links{
+    cursor: pointer;
+}
+
+ .active-link::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+.active-link:hover{
+    color: red;
+}
+ .tab-links.active-link:hover:after{
+    width: 50%;
+    color: red;
+}

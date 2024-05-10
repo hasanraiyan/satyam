@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam | Video Editor</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <div class="name">
+                <span class="red">S</span>atyam
+            </div>
+            <div class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </header>
+        <div class="hero" style="color: white;">
+            <p>Video Editor</p>
+            <p class="strong">
+                Hi, I am <span class="red nowrap">Satyam Kumar</span> <br>
+                studying at <br>
+                MIT Muzaffarpur
+            </p>
+        </div>
+    </div>
+
+
+    <!--  -->
+    <div class="box" id="about" style="color: white;">
+        <div class="img">
+            <img src="./images/satyam.png" alt="">
+        </div>
+        <div class="about-details" >
+            <div class="about-name">
+                <div class="strong">About me</div>
+                <div class="myself-details">
+                    Hello! I'm Satyam Kumar, a passionate student pursuing my Bachelor of Technology degree in the
+                    Mechanical branch at MIT Muzaffarpur. I'm deeply fascinated by the world of technology and its
+                    potential to solve complex problems and improve lives.
+                </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('skills')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>
+                            <a href="#" title="Click to see certification"><span>Video Editing</span></a><br>Proficient in video
+                            editing
+                        </li>
+        
+        
+        
+                    </ul>
+                    <span class="btn3" onclick="showMoreSkills()" id="more-skills-btn"><i
+                            class="fa-solid fa-angle-down"></i></span>
+                    <span class="btn3 hidden" href="#portfolio" onclick="showLessSkills()" id="less-skills-btn"><i
+                            class="fa-solid fa-angle-up"></i></span>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div class="box" id="portfolio">
+        portfolio
+    </div>
+    <div class="box" id="contact">
+        contact
+    </div>
+    <footer>
+        &copy; Raiyan
+    </footer>
+</body>
+
+</html>
